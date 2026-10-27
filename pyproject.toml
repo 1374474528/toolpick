@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "1374474528-toolpick"
+version = "0.1.0"
+description = "把任务意图与被选工具的用途做匹配，标出用错工具或该用不用的调用"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { file = "LICENSE" }
+authors = [{ name = "1374474528" }]
+keywords = ["ai", "llm", "cli", "analysis"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Environment :: Console",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3 :: Only",
+    "Topic :: Utilities",
+]
+
+[project.urls]
+Homepage = "https://1374474528.github.io"
+Repository = "https://github.com/1374474528/toolpick"
+Issues = "https://github.com/1374474528/toolpick/issues"
+
+[project.scripts]
+toolpick = "toolpick:main"
+
+[tool.setuptools]
+py-modules = ["toolpick"]
